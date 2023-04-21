@@ -8,6 +8,8 @@
     <title>Suntech</title>
     <link rel="stylesheet" href="./assets/css/main.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -54,14 +56,34 @@
 
 
                     <li class="active--list__item">
-                        <button class="btn">
+                        <label for="nav--mobile__input" class="btn">
                             <img src="./assets/images/menu.jpg" alt="cart">
-                        </button>
+                        </label>
                     </li>
 
                 </ul>
+
+
+            </div>
+            <input type="checkbox" hidden name="" class="nav--mobile" id="nav--mobile__input">
+
+            <label for="nav--mobile__input" class="nav--overlay"></label>
+            <div class="mobile">
+                <label for="nav--mobile__input" class="mobile--close">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </label>
+                <ul class="mobile--list">
+                    <li class="mobile--list__item"><a href="" class="head">Home</a></li>
+                    <li class="mobile--list__item"><a href="">Women</a></li>
+                    <li class="mobile--list__item"><a href="">Men</a></li>
+                    <li class="mobile--list__item"><a href="">Kids</a></li>
+                    <li class="mobile--list__item"><a href="">Jewellery</a></li>
+                    <li class="mobile--list__item"><a href="">Accessories</a></li>
+                </ul>
             </div>
         </div>
+
+<!-- banner -->
         <div class="banner">
             <div class="banner--title">
                 <h2>The best</h2>
@@ -69,6 +91,7 @@
             </div>
         </div>
         <div class="main">
+            <!-- best seller -->
             <div class="best-sellers ">
                 <ul class="best-sellers--list row">
                     <li class="best-sellers-- col position-relative">
@@ -135,6 +158,8 @@
                 </ul>
 
             </div>
+
+            <!-- service -->
             <div class="service">
                 <ul class="service--list row">
                     <li class="service--list__item col-md-3">
@@ -170,6 +195,8 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- category -->
             <div class="category">
                 <ul class="category--list row">
                     <li class="category--list__item col-md-4 col-lg-4">
@@ -191,6 +218,8 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- featured -->
             <div class="featured-product">
                 <h2 class="featured-product--title">FEARURED PRODUCT</h2>
                 <p class="featured-product--desc">Newest trends from top brands</p>
@@ -275,6 +304,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- offer -->
             <div class="offers">
                 <div class="offers--subscribe">
                     <h3 class="cubscibe-title">
@@ -290,18 +321,20 @@
                         <button class="btn">GET COUPON NOW</button>
                     </form>
                 </div>
-                <div class="offers--client">
+                <div class="offers--client col col-12 col-md-6 ">
                     <ul class="row">
-                        <li class="col"><img src="assets/images/client1.jpg" alt="client"></li>
-                        <li class="col"><img src="assets/images/client2.jpg" alt="client"></li>
-                        <li class="col"><img src="assets/images/client3.jpg" alt="client"></li>
-                        <li class="col"><img src="assets/images/client4.jpg" alt="client"></li>
+                        <li ><img src="assets/images/client1.jpg" alt="client"></li>
+                        <li ><img src="assets/images/client2.jpg" alt="client"></li>
+                        <li ><img src="assets/images/client3.jpg" alt="client"></li>
+                        <li ><img src="assets/images/client4.jpg" alt="client"></li>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <!-- footer -->
         <div class="footer">
-            <p class="footer-copyright">Copyright 2017 RenoshopBee all right reserved- Design by Kong</p>
+            <p class="footer-copyright">Copyright 2017 RenoshopBee all right reserved - Design by Kong</p>
             <ul class="cash--list">
                 <li class="cash--list__item"><img src="assets/images/footer1.jpg" alt="footer"></li>
                 <li class="cash--list__item"><img src="assets/images/footer2.jpg" alt="footer"></li>
