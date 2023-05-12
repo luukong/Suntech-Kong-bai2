@@ -105,14 +105,14 @@ li {
   content: "3";
   position: absolute;
   display: block;
-  height: 1.3rem;
-  width: 1.3rem;
+  height: 1.2rem;
+  width: 1.2rem;
   background: #3cb878;
   border-radius: 50%;
   text-align: center;
-  line-height: 1.3rem;
-  top: -8px;
-  right: 0;
+  line-height: 1.2rem;
+  top: -2px;
+  right: 1.5px;
 }
 
 .nav--overlay {
@@ -131,17 +131,14 @@ li {
   position: fixed;
   top: 8rem;
   right: 0;
+  text-align: center;
   bottom: 0;
   width: 320px;
   max-width: 100%;
   background-color: #fff;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   opacity: 0;
-  -webkit-transition: -webkit-transform linear 0.2 opacity linear 0.2;
-  transition: -webkit-transform linear 0.2 opacity linear 0.2;
-  transition: transform linear 0.2 opacity linear 0.2;
-  transition: transform linear 0.2 opacity linear 0.2, -webkit-transform linear 0.2 opacity linear 0.2;
 }
 .mobile .mobile--close {
   font-size: 1.6rem;
@@ -149,6 +146,9 @@ li {
   top: 1rem;
   right: 1rem;
   color: #000;
+}
+.mobile .mobile--close:hover {
+  cursor: pointer;
 }
 
 .mobile--list {
@@ -166,6 +166,9 @@ li {
   color: black;
   font-size: 1.6rem;
   text-transform: uppercase;
+}
+.mobile--list__item a:hover {
+  color: #3cb878;
 }
 
 .banner {
@@ -248,6 +251,9 @@ li {
 .best-sellers .best-sellers--inner:hover ul > li {
   display: block;
 }
+.best-sellers .best-sellers--inner:hover {
+  cursor: pointer;
+}
 
 .best-sellers__content-inner {
   top: 50%;
@@ -278,6 +284,9 @@ li {
 }
 .service img {
   display: inline-block;
+}
+.service img:hover {
+  cursor: pointer;
 }
 .service h3,
 .service p {
@@ -338,6 +347,9 @@ li {
   font-size: 1.4rem;
   padding: 2rem 0;
 }
+.featured-product .featured--product__inner:hover {
+  cursor: pointer;
+}
 
 .offers {
   width: 100%;
@@ -347,10 +359,9 @@ li {
   background-image: url("../images/bgr-subcsribe.jpg");
   -o-object-fit: contain;
      object-fit: contain;
-  text-align: center;
   overflow: hidden;
   text-align: center;
-  padding-top: 50px 0;
+  padding: 50px 0;
 }
 .offers .offers--subscribe .cubscibe-title {
   font-size: 3rem;
@@ -374,13 +385,14 @@ li {
 }
 .offers .offers--subscribe .subscribe--form .btn {
   background: #3cb878;
+  border-radius: 0px;
   padding-bottom: -1px;
   color: white;
   height: 3rem;
   margin: 15px 0;
 }
 .offers .offers--client {
-  background: #f5f6f9;
+  background-color: #f5f6f9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,13 +409,16 @@ li {
 }
 .offers .offers--client li {
   display: inline-block;
-  position: relative;
   list-style: none;
+  position: relative;
   left: 20%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 20px;
   width: 10.5rem;
+}
+.offers .offers--client img {
+  cursor: pointer;
 }
 
 .footer {
@@ -436,12 +451,13 @@ li {
   .menu--list {
     display: none;
   }
-  .nav--mobile:checked ~ .nav--overlay {
-    display: block;
-  }
   .nav--mobile:checked ~ .mobile {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    -webkit-transition: opacity linear 0.5s, -webkit-transform linear 0.2s;
+    transition: opacity linear 0.5s, -webkit-transform linear 0.2s;
+    transition: transform linear 0.2s, opacity linear 0.5s;
+    transition: transform linear 0.2s, opacity linear 0.5s, -webkit-transform linear 0.2s;
     opacity: 1;
   }
   .banner {
@@ -452,7 +468,7 @@ li {
     left: 6rem;
   }
   .banner--title h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: 2px;
   }
   .best-sellers .row {
@@ -472,7 +488,7 @@ li {
             justify-content: center;
   }
   .offers--client li {
-    margin-right: 30px;
+    margin-right: 25px;
   }
   .footer-copyright,
   .footer .cash--list {
@@ -490,10 +506,10 @@ li {
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
   .banner--title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .offers--client li {
-    margin-right: 30px;
+    margin-right: 35px;
   }
 }
 /* Mobile: width < 740px */
